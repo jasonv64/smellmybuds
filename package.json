@@ -6,13 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "css": "sass --watch app.scss css/output.css"
   },
   "dependencies": {
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "next": "13.4.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "@emailjs/browser": "^3.10.0",
+    "@types/google.analytics": "^0.0.42",
+    "@types/node": "^18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "@vercel/analytics": "^0.1.8",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "nextjs-cors": "^2.1.2", 
+    "react-bootstrap": "^2.7.0",
+    "scss": "^0.2.4"
   }
 }

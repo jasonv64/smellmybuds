@@ -1,95 +1,62 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
+import React from 'react';
+import {useState, useEffect} from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+import '../../css/output.css'
 
 export default function Home() {
+  const [cardColumns, setCardColums] = useState('');
+  const [whyColumns, setWhyColums] = useState('');
+
+  //you can only access window from client. useEffect is a client side 
+  //react hook (as are all react hooks)
+  useEffect(() => {
+    if (window.innerWidth < 534) {
+      setWhyColums('row-cols-2 row-cols-md-2');
+      setCardColums('');
+    } else if (window.innerWidth < 1561) {
+      setCardColums('row-cols-2 row-cols-md-2');
+      setWhyColums('row-cols-2 row-cols-md-2');
+    } else {
+      setWhyColums('row-cols-4 row-cols-md-4');
+    }    
+  }, []);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className='home-container'>
+        <div className='home-image-container'>
+          <Image 
+            src='https://res.cloudinary.com/dppkrg7h5/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1669835799/samples/solar%20panel%20cleaning/cleanpanels_teqnhf.jpg'
+            className='main-home-image'
+            alt='clean solar panels'
+          />
+          <div className='main-home-image-div'>
+            <h1 className='main-home-image-header'>
+              Smell My Buds
+            </h1>
+            <p className='main-home-image-slogan'>
+              My Work Showcase
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className='home-showcase'>
+          pretty pictures
+        </div>
+        <div>
+          cool ass quote
+        </div>
+        <div>
+          instagram feed
+        </div>
+        <div>
+          services
+        </div>
+        <div>
+          contact form
+        </div>
+    </div>
   )
 }
