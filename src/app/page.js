@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
-import '../../css/output.css'
+import '../../css/output.css';
 
 export default function Home() {
   const [cardColumns, setCardColums] = useState('');
@@ -27,26 +27,59 @@ export default function Home() {
 
   return (
     <div className='home-container'>
-        <div className='home-image-container'>
-          <Image 
-            src='https://res.cloudinary.com/dppkrg7h5/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1669835799/samples/solar%20panel%20cleaning/cleanpanels_teqnhf.jpg'
-            className='main-home-image'
-            alt='clean solar panels'
-          />
-          <div className='main-home-image-div'>
-            <h1 className='main-home-image-header'>
-              Smell My Buds
-            </h1>
-            <p className='main-home-image-slogan'>
-              My Work Showcase
-            </p>
+        <div className='home-image-container position-relative text-center'>
+          <div class="col home-hero-text">
+            <h1 class="display-5 fw-bold home-company-name">Smell My Buds</h1>
+            <h3 class="fw-normal text-muted mb-3 home-slogan">My work showcase</h3>
           </div>
         </div>
         <div className='home-showcase'>
-          pretty pictures
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          cool ass quote
+        <div className='home-showcase'>
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <Image width={25} height={25} src="https://amymhaddad.s3.amazonaws.com/morocco-blue.png" class="card-img-top showcase-cards" alt="..."/>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           instagram feed
