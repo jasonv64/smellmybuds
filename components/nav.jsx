@@ -9,7 +9,7 @@ import '../css/output.css';
 function NavBar() {
     return(
         <Navbar className="justify-content-end">
-            <Navbar.Brand href="#home">Smell My Buds</Navbar.Brand>
+            <Navbar.Brand href="#home" className="nav-logo">Smell My Buds</Navbar.Brand>
             <Nav>
                 <Nav.Item>
                     <Nav.Link href="/">Home</Nav.Link>
