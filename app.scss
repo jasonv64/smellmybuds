@@ -1,3 +1,23 @@
+.no-gutter {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+  
+.no-gutter > [class*="col"] {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.no-roofing  {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+  
+.no-roofing > [class*="col"] {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .nav-logo {
     margin-right: 60vw;
 }
