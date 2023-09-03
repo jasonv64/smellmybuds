@@ -18,14 +18,21 @@
     padding-bottom: 0;
 }
 
+.right-align {
+    text-align: right !important;
+}
+
+.center {
+    text-align: center;
+}
+
 .nav-logo {
     margin-right: 60vw;
 }
 
 .home-image-container {
-    width: 100vw;
     height: 70vh;
-    background-image: url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");;
+    background-image: url("https://res.cloudinary.com/dppkrg7h5/image/upload/v1693757042/not-sw/SmellMyBuds/main_lmrspv.jpg");;
 }
 
 .home-hero-text {
@@ -42,5 +49,49 @@
 }
 
 .showcase-cards {
-    height: 25vh !important;
+    height: 45vh !important;
+}
+
+.section-header {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.service-card-image {
+    height: 45vh;
+}
+
+.service-card {
+    margin: 5vh;
+}
+
+.contact-form {
+    margin-top: 2.5vh;
+    width: 75vw;
+    margin: auto;
+    padding-bottom: 3vh;
+}
+
+.form-row {
+    padding-top: 3vh;
+}
+
+.main-input {
+    width: 75%;
+    margin: auto;
+}
+
+.social-icons {
+    margin-top: 2.5vw !important;
+}
+
+.icon {    
+    height: 8vw;
+    width: 10vw;
+}
+
+.developer-credits {
+    margin-top: 5vh;
 }

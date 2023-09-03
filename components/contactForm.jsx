@@ -41,41 +41,41 @@ function ContactForm() {
           </div>
           :
           <form className="needs-validation contact-form home-section">
-            <div className="row no-gutter">
+            <div className="row no-gutter form-row">
               <div className="col contact-text-input">
-                <input type="text" onChange={(e) => {setFirstName(e.target.value)}} className="form-control" id="first-name" placeholder='First Name' required/>
+                <input type="text" onChange={(e) => {setFirstName(e.target.value)}} className="form-control main-input" id="first-name" placeholder='First Name' required/>
                 <small></small>
                 <div className="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div className="col contact-text-input">
-                <input type="text" onChange={(e) => {setLastName(e.target.value)}} className="form-control" id="last-name" placeholder='Last Name' required/>
+                <input type="text" onChange={(e) => {setLastName(e.target.value)}} className="form-control main-input" id="last-name" placeholder='Last Name' required/>
                 <small></small>
                 <div className="valid-feedback">
                   Looks good!
                 </div>
               </div>
             </div>
-            <div className='row no-gutter'>
+            <div className='row no-gutter form-row'>
               <div className="col contact-text-input">
-                <input type="text" onChange={(e) => {setEmail(e.target.value)}} className="form-control" id="email" placeholder='Email' required/>
+                <input type="text" onChange={(e) => {setEmail(e.target.value)}} className="form-control main-input" id="email" placeholder='Email' required/>
                 <small></small>
                 <div className="invalid-feedback">
                   Please enter an Email.
                 </div>
               </div>
               <div className="col contact-text-input">
-                <input type="text" onChange={(e) => {setCity(e.target.value)}} className="form-control" placeholder='City' id="city" required/>
+                <input type="text" onChange={(e) => {setCity(e.target.value)}} className="form-control main-input" placeholder='City' id="city" required/>
                 <small></small>
                 <div className="invalid-feedback">
                   Please provide a valid city.
                 </div>
               </div>
             </div>
-            <div className='row no-gutter'>
+            <div className='row no-gutter form-row'>
               <div className="col contact-text-input">
-                <select onChange={(e) => {setState(e.target.value)}} className="form-select form-control" id="state" required>
+                <select onChange={(e) => {setState(e.target.value)}} className="form-select form-control main-input" id="state" required>
                   <option value="" selected>Select a State</option>
                   <option value="AZ">Arizona</option>
                   <option value="CA">California</option>
@@ -92,23 +92,23 @@ function ContactForm() {
                 </div>
               </div>
               <div className="col contact-text-input">
-                <input type="text" onChange={(e) => {setZip(e.target.value)}} className="form-control" placeholder='Zip' id="zip" required/>
+                <input type="text" onChange={(e) => {setZip(e.target.value)}} className="form-control main-input" placeholder='Zip' id="zip" required/>
                 <small></small>
                 <div className="invalid-feedback">
                   Please provide a valid zip.
                 </div>
               </div>
             </div>
-            <div className="col contact-text-input">
+            <div className="col contact-text-input form-row">
               <textarea onChange={(e) => {setMessage(e.target.value)}} className="form-control" placeholder='Type away...'/>
             </div>
-            <div className=" row no-gutter justify-content-center button-wrapper">
+            <div className=" row no-gutter justify-content-center button-wrapper form-row">
               <button onClick={e => {e.preventDefault(); handleSubmit()}} className="btn btn-primary submit-form" type="submit">
                 Submit
               </button>
               <small></small>
             </div>   
-        </form>
+          </form>
         }
     </>
   )
