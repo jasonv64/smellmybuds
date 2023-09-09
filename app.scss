@@ -70,6 +70,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: #ed22ff;
 }
 
+.service-locations {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
 @media screen and (max-width: 12000px) and (min-width: 1201px) {
     .nav-logo {
         margin-right: 60vw;
@@ -87,7 +92,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 @media screen and (max-width: 535px) {
     .nav-logo {
-        margin-right: 60vw;
+        margin-right: 35vw;
     }
 }
 
@@ -268,6 +273,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media screen and (max-width: 535px) {
     .service-card {
         margin: 5vh .5vh;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .card-title {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .card-text {
+        font-size: x-small;
     }
 }
 

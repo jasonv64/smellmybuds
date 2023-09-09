@@ -70,6 +70,11 @@
   color: #ed22ff;
 }
 
+.service-locations {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
 @media screen and (max-width: 12000px) and (min-width: 1201px) {
   .nav-logo {
     margin-right: 60vw;
@@ -87,7 +92,7 @@
 }
 @media screen and (max-width: 535px) {
   .nav-logo {
-    margin-right: 60vw;
+    margin-right: 35vw;
   }
 }
 @media screen and (max-width: 12000px) and (min-width: 1201px) {
@@ -260,6 +265,16 @@
 @media screen and (max-width: 535px) {
   .service-card {
     margin: 5vh 0.5vh;
+  }
+}
+@media screen and (max-width: 535px) {
+  .card-title {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 535px) {
+  .card-text {
+    font-size: x-small;
   }
 }
 @media screen and (max-width: 12000px) and (min-width: 1201px) {
