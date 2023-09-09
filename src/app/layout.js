@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
     */}
     <head />
-    <body className="no-gutter no-roofing">
+    <body className="no-gutter no-roofing body">
       <NavBar/>
       {children}
       <Footer/>

@@ -12,13 +12,7 @@ function NavBar() {
             <Navbar.Brand href="#home" className="nav-logo">Smell My Buds</Navbar.Brand>
             <Nav>
                 <Nav.Item>
-                    <Nav.Link href="/">Home</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="/about">About</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
+                    <Nav.Link className="home-link" href="/">Home</Nav.Link>
                 </Nav.Item>
             </Nav>
         </Navbar>

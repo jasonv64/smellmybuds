@@ -15,12 +15,6 @@ function Footer() {
                     <div className='row footer-link no-gutter'>
                         <Link href='/' className='light-link'>Home</Link>
                     </div>
-                    <div className='row footer-link no-gutter'>
-                        <Link href='/about' className='light-link'>About Us</Link>
-                    </div>
-                    <div className='row footer-link no-gutter'>
-                        <Link href='/contact' className='light-link'>Contact</Link>
-                    </div>
                 </div>
                 <div className='col'>
                     <h2 className='footer-header'>
@@ -43,6 +37,8 @@ function Footer() {
                 <div className='col social-icon'>
                     <Link href='https://www.instagram.com/smellmybuds'>
                         <Image
+                            width={50}
+                            height={50}
                             src='https://res.cloudinary.com/dppkrg7h5/image/upload/v1669835799/icons/instagram-icon_n6xiqj.png'
                             alt='instagram icon link'
                             className='icon'/>
@@ -51,6 +47,8 @@ function Footer() {
                 <div className='col social-icon'>
                     <Link href='https://www.facebook.com/smellmybuds'>
                         <Image
+                            width={50}
+                            height={50}
                             src='https://res.cloudinary.com/dppkrg7h5/image/upload/v1669835799/icons/facebook-icon_imb6t4.png'
                             alt='facebook icon link'
                             className='icon'/>
@@ -59,6 +57,8 @@ function Footer() {
                 <div className='col social-icon'>
                     <Link href='https://www.yelp.com/biz/smell-my-buds-moreno-valley'>
                         <Image
+                            width={50}
+                            height={50}
                             src='https://res.cloudinary.com/dppkrg7h5/image/upload/v1669835800/icons/yelp-icon_evvnuu.png'
                             alt='yelp icon link'
                             className='icon'/>

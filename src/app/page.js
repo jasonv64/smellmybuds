@@ -33,7 +33,7 @@ export default function Home() {
         <div className='home-image-container position-relative text-center'>
           <div class="col home-hero-text">
             <h1 class="display-5 fw-bold home-company-name">Smell My Buds</h1>
-            <h3 class="fw-normal text-muted mb-3 home-slogan">Your imagination, our creation.</h3>
+            <h3 class="fw-normal mb-3 home-slogan">Your imagination, our creation.</h3>
           </div>
         </div>
         <div className='home-showcase'>
@@ -96,7 +96,6 @@ export default function Home() {
                 <Card.Text>
                   Get all your birthday theme dialed in perfectly with custom decor!
                 </Card.Text>
-                <Button variant="primary">Celebrate</Button>
               </Card.Body>
             </Card>
             <Card className='col service-card' style={{ width: '30%' }}>
@@ -106,7 +105,6 @@ export default function Home() {
                 <Card.Text>
                   Getting ready for your special day? Lets create something that will leave a lasting impression.
                 </Card.Text>
-                <Button variant="primary">Flower Toss</Button>
               </Card.Body>
             </Card>
             <Card className='col service-card' style={{ width: '30%' }}>
@@ -116,7 +114,6 @@ export default function Home() {
                 <Card.Text>
                   Honor your loved ones with something special.
                 </Card.Text>
-                <Button variant="primary">Good Bye</Button>
               </Card.Body>
             </Card>
           </div>
